@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Antrian Klinik Ramah Anak</title>
+    <link rel="stylesheet" href="Antri.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=500&q=80">
+
+            <div class="content-wrapper">
+                <div id="section-input">
+                    <h2>Pendaftaran Pasien</h2>
+                    <input type="text" id="nama" placeholder="Nama Pasien">
+                    <select id="poli">
+                        <option value="">Pilih Jenis Poli</option>
+                        <option value="Umum">Poli Umum</option>
+                        <option value="Gigi">Poli Gigi</option>
+                        <option value="Anak">Poli Anak</option>
+                    </select>
+                    <button id="btn-kirim" class="btn btn-tambah" onclick="validasiData()">Ambil Nomor Antrian</button>
+                </div>
+
+                <div id="section-antrian">
+                    <h2>Nomor Antrian Anda</h2>
+                    <div class="display-nomor">
+                        <h1 id="no-saya">0</h1>
+                        <p id="info-poli"></p>
+                    </div>
+                    <div class="estimasi">
+                        Estimasi Waktu Tunggu: <br>
+                        <strong id="waktu-estimasi">15 Menit</strong>
+                    </div>
+                    <div class="notifikasi" id="notif-panggil">
+                        Status: Menunggu Antrian...
+                    </div>
+                    <button class="btn btn-selesai" onclick="selesai()">Selesai & Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Antri.js"></script>
+</body>
+</html>
