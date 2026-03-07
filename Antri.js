@@ -33,12 +33,13 @@ function tampilkanAntrian(nama, poli) {
         statusNotif.style.background = "#e8f5e9";
 
         // Suara Panggilan Otomatis
-        const teksPanggilan = "Nomor antrian " + nomorAntrian + ", atas nama " + nama + ", silakan masuk ke poli " + poli;
+        const teksPanggilan = "Nomor antrian " + nomorAntrian + ", atas nama " + 
+        nama + ", silakan masuk ke poli " + poli;
         const msg = new SpeechSynthesisUtterance(teksPanggilan);
         msg.lang = 'id-ID';
         window.speechSynthesis.speak(msg);
     }, 3000);
-}
+}SSSSS
 
 function selesai() {
     if(confirm("Apakah Anda sudah selesai berobat? Sistem akan meriset data.")) {
