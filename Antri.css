@@ -125,10 +125,10 @@ input:focus, select:focus {
 }
 
 .btn-selesai { 
-    background: #78909c; 
+    background: #02abff; 
     color: white; 
 }
 
 .btn-selesai:hover {
-    background: #546e7a;
+    background: #021924;
 }

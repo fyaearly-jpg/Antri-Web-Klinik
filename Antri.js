@@ -28,7 +28,7 @@ function tampilkanAntrian(nama, poli) {
     // Simulasi Delay Panggilan (3 detik)
     setTimeout(() => {
         const statusNotif = document.getElementById('notif-panggil');
-        statusNotif.innerText = "NOTIFIKASI: SILAKAN MASUK KE POLI!";
+        statusNotif.innerText = "SILAKAN MASUK KE POLI!";
         statusNotif.style.color = "green";
         statusNotif.style.background = "#e8f5e9";
 
