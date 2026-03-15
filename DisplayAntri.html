@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Display Antrean Klinik</title>
+</head>
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center p-10">
+
+    <div class="max-w-4xl w-full text-center space-y-10">
+        <h1 class="text-4xl font-bold tracking-widest text-slate-400 uppercase">Panggilan Antrean</h1>
+
+        <div class="bg-white text-slate-900 rounded-[3rem] p-16 shadow-2xl border-[10px] border-blue-600 animate-pulse-slow">
+            <h2 id="display-poli" class="text-3xl font-bold text-blue-600 uppercase mb-4">---</h2>
+            <div id="display-nomor" class="text-[15rem] font-black leading-none my-4 text-slate-800">00</div>
+            <div class="h-2 w-32 bg-slate-200 mx-auto rounded-full mb-6"></div>
+            <h3 id="display-nama" class="text-5xl font-bold text-slate-700">Menunggu Panggilan...</h3>
+        </div>
+
+        <p class="text-2xl text-slate-500 italic">"Silakan menuju ke ruangan poli yang tertera"</p>
+    </div>
+
+    <style>
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 3s infinite ease-in-out;
+        }
+    </style>
+
+<script src="DisplayAntri.js"></script>
+</body>
+</html>
